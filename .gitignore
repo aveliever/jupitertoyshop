@@ -1,0 +1,10 @@
+.classpath
+.project
+.settings/
+/target/
+*/target/**
+/test-output/
+
+# file: ~/.gitignore_global
+.DS_Store
+.idea
