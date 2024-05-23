@@ -14,10 +14,7 @@ steps:
   inputs:
     versionSpec: '8'
     jdkArchitectureOption: 'x64'
-    jdkSourceOption: 'LocalDirectory'
-    jdkFile: 'C:\Program Files\Java\jdk-20'
-    jdkDestinationDirectory: 'C:\Program Files\Java\jdk-20'
-    cleanDestinationDirectory: true
+    jdkSourceOption: 'PreInstalled'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
