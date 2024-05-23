@@ -9,6 +9,15 @@ trigger:
 pool: Default
 
 steps:
+
+- task: JavaToolInstaller@0
+  inputs:
+    versionSpec: '8'
+    jdkArchitectureOption: 'x64'
+    jdkSourceOption: 'LocalDirectory'
+    jdkFile: 'C:\Program Files\Java\jdk-20'
+    jdkDestinationDirectory: 'C:\Program Files\Java\jdk-20'
+    cleanDestinationDirectory: true
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
